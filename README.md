@@ -2,11 +2,11 @@
 
 一个以 3D 地球和时间线展示旅行回忆的 React 网页项目。
 
-> 这是公开展示版。仓库仅包含虚构示例数据和公开图片链接，不包含真实旅行记录、个人照片、音乐、留言或 Supabase 凭据。
+> 这是公开展示版。仓库仅包含虚构示例数据和本地示例图片，不包含真实旅行记录、个人照片、音乐、留言或 Supabase 凭据。
 
 ## 演示视频
 
-[▶️ 查看项目演示视频](./demo/my-travel-demo.mp4)
+[▶️ 直接播放项目演示视频](https://raw.githubusercontent.com/nikiwonjay/my_travel_showcase/main/demo/my-travel-demo.mp4)
 
 ## 主要功能
 
