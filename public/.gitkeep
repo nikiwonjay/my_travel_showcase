@@ -1,0 +1,7 @@
+# Keep empty trip folders in git
+photos/**/*
+!photos/README.txt
+!photos/*/
+audio/**/*
+!audio/README.txt
+!audio/*/

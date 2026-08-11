@@ -1,0 +1,425 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Avenir Next', Nunito, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', system-ui, sans-serif;
+  background: linear-gradient(180deg, #fbfffd 0%, #eefaf7 42%, #f5fbff 100%);
+  color: #334155;
+  overflow: hidden;
+}
+
+.glass-panel {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.52);
+  box-shadow: 0 16px 40px rgba(148, 184, 212, 0.18);
+  backdrop-filter: blur(20px);
+}
+
+.travel-app-shell {
+  background:
+    radial-gradient(circle at top left, rgba(216, 245, 234, 0.8), transparent 28%),
+    radial-gradient(circle at top right, rgba(217, 239, 255, 0.82), transparent 32%),
+    linear-gradient(180deg, #fbfffd 0%, #eefaf7 42%, #f5fbff 100%);
+}
+
+.flower {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 50% 50%, #f8c7dd 0 16%, transparent 17%),
+    radial-gradient(circle at 50% 18%, rgba(255, 255, 255, 0.95) 0 24%, transparent 25%),
+    radial-gradient(circle at 83% 50%, rgba(255, 255, 255, 0.95) 0 24%, transparent 25%),
+    radial-gradient(circle at 50% 83%, rgba(255, 255, 255, 0.95) 0 24%, transparent 25%),
+    radial-gradient(circle at 17% 50%, rgba(255, 255, 255, 0.95) 0 24%, transparent 25%);
+  opacity: 0.72;
+  filter: blur(0.3px);
+}
+
+.flower-a {
+  left: 8%;
+  top: 18%;
+  transform: rotate(-8deg) scale(0.9);
+}
+
+.flower-b {
+  right: 10%;
+  top: 24%;
+  transform: rotate(12deg);
+}
+
+.flower-c {
+  left: 14%;
+  bottom: 18%;
+  transform: scale(0.72);
+}
+
+.flower-d {
+  right: 14%;
+  bottom: 16%;
+  transform: rotate(-18deg) scale(0.82);
+}
+
+.hero-stage {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 5.5rem 1.5rem 7rem;
+}
+
+.hero-orbit-glow {
+  position: absolute;
+  width: min(76vw, 32rem);
+  height: min(76vw, 32rem);
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.72) 0%, rgba(217, 239, 255, 0.2) 58%, transparent 72%);
+  filter: blur(8px);
+}
+
+.hero-scene {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(82vw, 30rem);
+  height: min(82vw, 34rem);
+}
+
+.globe-axis {
+  display: none;
+}
+
+.globe-base {
+  display: none;
+}
+
+.hero-earth-shell {
+  position: relative;
+  width: min(74vw, 24rem);
+  height: min(74vw, 24rem);
+  margin-bottom: 2.5rem;
+  z-index: 2;
+}
+
+.hero-earth {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow:
+    0 28px 70px rgba(118, 184, 211, 0.24),
+    inset -16px -12px 0 rgba(84, 183, 234, 0.16);
+  border: 2px solid rgba(25, 37, 58, 0.15);
+  background: linear-gradient(180deg, #8ce3ff 0%, #5ccff5 48%, #4eb8ef 100%);
+}
+
+.hero-earth-map {
+  position: absolute;
+  inset: 0;
+  width: 200%;
+  display: flex;
+}
+
+.hero-earth-strip {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.land {
+  position: absolute;
+  display: block;
+  border-radius: 999px;
+  background: #a6dc5b;
+  filter: drop-shadow(0 4px 2px rgba(128, 173, 87, 0.15));
+}
+
+.set-a-1 {
+  left: 6%;
+  top: 21%;
+  width: 20%;
+  height: 12%;
+  transform: rotate(-18deg);
+}
+
+.set-a-2 {
+  left: 24%;
+  top: 56%;
+  width: 28%;
+  height: 18%;
+  transform: rotate(34deg);
+}
+
+.set-a-3 {
+  left: 56%;
+  top: 18%;
+  width: 13%;
+  height: 11%;
+}
+
+.set-a-4 {
+  left: 62%;
+  top: 54%;
+  width: 34%;
+  height: 22%;
+  transform: rotate(-18deg);
+}
+
+.set-a-5 {
+  left: 44%;
+  top: 46%;
+  width: 7%;
+  height: 7%;
+}
+
+.set-b-1 {
+  left: 10%;
+  top: 28%;
+  width: 15%;
+  height: 10%;
+}
+
+.set-b-2 {
+  left: 30%;
+  top: 18%;
+  width: 24%;
+  height: 16%;
+  transform: rotate(16deg);
+}
+
+.set-b-3 {
+  left: 46%;
+  top: 58%;
+  width: 22%;
+  height: 14%;
+  transform: rotate(-32deg);
+}
+
+.set-b-4 {
+  left: 70%;
+  top: 22%;
+  width: 18%;
+  height: 14%;
+  transform: rotate(10deg);
+}
+
+.set-b-5 {
+  left: 76%;
+  top: 50%;
+  width: 8%;
+  height: 8%;
+}
+
+.hero-earth-grid {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at center, transparent 54%, rgba(25, 37, 58, 0.08) 55%, transparent 56%),
+    linear-gradient(90deg, transparent 49%, rgba(255, 255, 255, 0.3) 50%, transparent 51%),
+    linear-gradient(transparent 32%, rgba(255, 255, 255, 0.16) 33%, transparent 34%),
+    linear-gradient(transparent 66%, rgba(255, 255, 255, 0.16) 67%, transparent 68%);
+  pointer-events: none;
+}
+
+.hero-earth-shade {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.42) 0%, transparent 28%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 0%, transparent 38%, rgba(16, 38, 77, 0.1) 100%);
+  pointer-events: none;
+}
+
+.travel-dot {
+  position: absolute;
+  z-index: 8;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.travel-dot-core {
+  position: relative;
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 999px;
+  background: #ef4444;
+  border: 2px solid #fff7f7;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.18);
+}
+
+.travel-dot-ring {
+  position: absolute;
+  inset: -0.45rem;
+  border-radius: 999px;
+  border: 1px solid rgba(239, 68, 68, 0.42);
+  animation: markerPulse 2.2s ease-out infinite;
+  pointer-events: none;
+}
+
+.travel-tooltip {
+  position: absolute;
+  left: 50%;
+  top: -0.8rem;
+  display: flex;
+  min-width: 5.8rem;
+  flex-direction: column;
+  gap: 0.08rem;
+  transform: translate(-50%, -100%);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.92);
+  padding: 0.5rem 0.7rem;
+  text-align: center;
+  box-shadow: 0 14px 30px rgba(148, 184, 212, 0.18);
+  color: #475569;
+}
+
+.travel-tooltip strong {
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.travel-tooltip span {
+  font-size: 0.73rem;
+  color: #64748b;
+}
+
+@keyframes markerPulse {
+  0% {
+    opacity: 0.72;
+    transform: scale(0.82);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(1.55);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.62);
+  }
+}
+
+.polaroid {
+  width: 9rem;
+  flex-shrink: 0;
+  border-radius: 0.3rem;
+  background: white;
+  padding: 0.4rem 0.4rem 0.6rem;
+  box-shadow: 0 10px 24px rgba(148, 163, 184, 0.18);
+  transition: transform 300ms ease;
+}
+
+.polaroid img {
+  display: block;
+  width: 100%;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 0.15rem;
+}
+
+.polaroid-caption {
+  margin-top: 0.4rem;
+  text-align: center;
+  font-family: 'Bradley Hand', 'Comic Sans MS', 'Segoe Print', 'Noto Sans SC', cursive;
+  font-size: 0.85rem;
+  color: #475569;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.film-scroll {
+  scrollbar-color: rgba(148, 163, 184, 0.4) transparent;
+  scrollbar-width: thin;
+}
+
+.film-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.film-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 999px;
+}
+
+.film-strip {
+  position: relative;
+}
+
+.film-frame {
+  padding: 0 0.5rem;
+}
+
+.film-perforations {
+  height: 12px;
+  margin: 0 1rem;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(148, 163, 184, 0.35) 0,
+    rgba(148, 163, 184, 0.35) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  opacity: 0.8;
+}
+
+.film-perforations.top {
+  margin-bottom: 4px;
+}
+
+.film-perforations.bottom {
+  margin-top: 4px;
+}
+
+.film-connector {
+  width: 32px;
+  align-self: center;
+  border-top: 2px dashed rgba(148, 163, 184, 0.45);
+}
+
+@media (max-width: 768px) {
+  .hero-scene {
+    width: min(92vw, 25rem);
+    height: min(92vw, 28rem);
+  }
+
+  .hero-earth-shell {
+    width: min(82vw, 21rem);
+    height: min(82vw, 21rem);
+  }
+
+  .polaroid {
+    width: 7.5rem;
+  }
+
+  .polaroid img {
+    height: 5.5rem;
+  }
+}
